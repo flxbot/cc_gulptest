@@ -7,7 +7,7 @@ var rename = require("gulp-rename");
 
 gulp.task('css', function() {
     var plugins = [];
-    return gulp.src('./_site/css/main.css')
+    return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
                 html: ['_site/**/*.html'],
