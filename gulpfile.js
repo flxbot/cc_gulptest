@@ -10,7 +10,7 @@ gulp.task('css', function() {
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
-                html: ['_site/**/*.html'],
+                html: ['_layouts/**/*.html'],
                 htmlroot: '_site',
                 ignore: ['.red']
             }),
