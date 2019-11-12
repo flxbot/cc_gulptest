@@ -3,15 +3,27 @@ title: Home
 layout: default
 ---
 
+# Blue Heading
+{: .blue}
 
-<h1 class="blue">Blue Heading</h1>
-<p class="green">Green Text</p>
-<p class="violet">Red Text</p>
-<h2>Heading 2</h2>
-<p class="green">Green Text</p>
-<p class="violet">Red Text</p>
-<h2>Heading 2</h2>
-<p class="green">Green Text</p>
-<p class="green">Green Text</p>
+Green Text 1
+{: .green}
 
+Red Text
+{: .violet}
 
+## Heading 2
+
+Green Text
+{: .green}
+
+Red Text&nbsp;
+{: .violet}
+
+## Heading 2
+
+Green Text
+{: .green}
+
+Green Text
+{: .green}
