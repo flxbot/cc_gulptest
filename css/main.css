@@ -1,0 +1,31 @@
+body {
+    background: GhostWhite;
+}
+
+p {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.green {
+    color: ForestGreen;
+}
+
+.blue {
+    color: DarkBlue;
+}
+
+.red {
+    color: DarkRed;
+}
+
+.violet {
+    color: MediumVioletRed;
+}
+
+.indigo {
+    color: Indigo;
+}

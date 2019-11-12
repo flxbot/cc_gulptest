@@ -1,34 +1,27 @@
 {
-  "name": "jekyll-boilerplate",
+  "name": "cc_gulptest",
   "version": "1.0.0",
-  "description": "boilerplate for jekyll project with gulp, postcss, uncss on cloudcannon",
+  "description": "cloudcannon jekyll gulp test",
   "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flxbot/cc_gulptest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flxbot/cc_gulptest/issues"
+  },
+  "homepage": "https://github.com/flxbot/cc_gulptest#readme",
   "dependencies": {
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
     "postcss-uncss": "^0.17.0",
     "uncss": "^0.17.2"
-  },
-  "scripts": {
-    "gulp": "gulp css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/flxbot/cc-boilerplate-jekyll4.git"
-  },
-  "keywords": [
-    "jekyll",
-    "gulp",
-    "postcss",
-    "cloudcannon"
-  ],
-  "author": "Felix Böttcher",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/flxbot/cc-boilerplate-jekyll4/issues"
-  },
-  "homepage": "https://github.com/flxbot/cc-boilerplate-jekyll4#readme"
+  }
 }
