@@ -28,6 +28,6 @@ gulp.task('css', function() {
 
 gulp.task('jekyll', function() {
     var plugins = [];
-  return child.spawn('jekyll', ['build'
+  return child.spawn('jekyll.bat', ['build'
   ]);
 });
