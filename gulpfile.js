@@ -8,13 +8,13 @@ var fs = require('fs');
 
 gulp.task('css', function() {
     var plugins = [];
-    fs.writeFileSync('test.txt', '1.2.4');
+    fs.writeFileSync('test.txt', 'hello world');
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
                 html: ['test.html'],
                 htmlroot: '_site',
-                ignore: ['.red']
+                ignore: ['.red','.green']
             }),
             cssnano()
         ]))
