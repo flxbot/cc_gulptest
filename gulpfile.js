@@ -13,7 +13,7 @@ gulp.task('css', function() {
         .pipe(postcss([
             uncss({
                 html: ['./**/*.html'],
-                htmlroot: '_site',
+                htmlroot: './',
                 ignore: ['.green']
             }),
             cssnano()
