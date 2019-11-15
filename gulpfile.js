@@ -12,7 +12,7 @@ gulp.task('css', function() {
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
-                html: ['/**/*.html'],
+                html: ['./**/*.html'],
                 htmlroot: '_site',
                 ignore: ['.green']
             }),
