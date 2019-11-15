@@ -18,6 +18,7 @@ gulp.task('css', function() {
         ]))
         .pipe(rename({ suffix: ".min" }))
         .pipe(gulp.dest('./css/'))
+        .pipe(debug({title: 'gulp-debug:',minimal:false}))
         ;
 });
 
