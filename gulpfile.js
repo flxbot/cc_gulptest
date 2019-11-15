@@ -12,9 +12,9 @@ gulp.task('css', function() {
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
-                html: ['test.html'],
+                html: ['/**/*.html'],
                 htmlroot: '_site',
-                ignore: ['.red']
+                ignore: ['.green']
             }),
             cssnano()
         ]))
