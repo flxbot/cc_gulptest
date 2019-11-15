@@ -4,8 +4,7 @@ var cssnano = require("cssnano"); // CSS Minifier
 var uncss = require('postcss-uncss');
 var rename = require("gulp-rename");
 var fs = require('fs');
-
-const child = require('child_process');
+var child = require('child_process');
 
 gulp.task('css', function() {
     var plugins = [];
@@ -24,8 +23,10 @@ gulp.task('css', function() {
 });
 
 
+
+
 gulp.task('jekyll', function() {
     var plugins = [];
-  return child.exec('jekyll', ['build'
+  return child.spawn('jekyll', ['build'
   ]);
 });
