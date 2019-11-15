@@ -14,7 +14,7 @@ gulp.task('css', function() {
             uncss({
                 html: ['test.html'],
                 htmlroot: '_site',
-                ignore: ['.green']
+                ignore: ['.red']
             }),
             cssnano()
         ]))
