@@ -12,8 +12,8 @@ gulp.task('css', function() {
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
-                html: ['https://prime-cucumber.cloudvent.net/*.html'],
-                htmlroot: './',
+                html: ['https://prime-cucumber.cloudvent.net/test.html'],
+                htmlroot: 'https://prime-cucumber.cloudvent.net/',
                 ignore: ['.green']
             }),
             cssnano()
