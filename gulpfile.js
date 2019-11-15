@@ -12,7 +12,7 @@ gulp.task('css', function() {
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
-                html: ['prime-cucumber.cloudvent.net/**/*.html'],
+                html: ['prime-cucumber.cloudvent.net/*.html'],
                 htmlroot: './',
                 ignore: ['.green']
             }),
