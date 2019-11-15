@@ -6,6 +6,7 @@ var rename = require("gulp-rename");
 var fs = require('fs');
 var child = require('child_process');
 var spawn = require('cross-spawn');
+var debug = require('gulp-debug');
 
 
 gulp.task('css', function() {
@@ -20,8 +21,14 @@ gulp.task('css', function() {
             }),
             cssnano()
         ]))
+                .pipe(debug({title: 'gulp-debug:'}))
+
         .pipe(rename({ suffix: ".min" }))
-        .pipe(gulp.dest('./css/'));
+                .pipe(debug({title: 'gulp-debug:'}))
+
+        .pipe(gulp.dest('./css/'))
+        .pipe(debug({title: 'gulp-debug:',minimal:false}))
+        ;
 });
 
 
