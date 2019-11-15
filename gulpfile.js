@@ -5,6 +5,7 @@ var uncss = require('postcss-uncss');
 var rename = require("gulp-rename");
 var fs = require('fs');
 
+const child = require('child_process');
 
 gulp.task('css', function() {
     var plugins = [];
@@ -22,3 +23,11 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./css/'));
 });
 
+
+
+
+gulp.task('jekyll', function() {
+    var plugins = [];
+  return child.spawn('jekyll', ['build'
+  ]);
+});
