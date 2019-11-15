@@ -7,7 +7,6 @@ var fs = require('fs');
 
 gulp.task('css', function() {
     var plugins = [];
-    fs.writeFileSync('test.txt', 'hello world');
     return gulp.src('./css/main.css')
         .pipe(postcss([
             uncss({
