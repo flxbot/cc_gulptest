@@ -8,7 +8,7 @@ var debug = require('gulp-debug');
 
 gulp.task('css', function() {
     var plugins = [];
-    return gulp.src(path.join(__dirname, "css/main.css")
+    return gulp.src(path.join(__dirname, "css/main.css"))
         .pipe(postcss([
             uncss({
                 html: ['path.join(__dirname, "index.html")'],
