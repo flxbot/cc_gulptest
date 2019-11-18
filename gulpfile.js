@@ -14,7 +14,7 @@ gulp.task('css', function() {
     .pipe(debug({title: 'gulp-debug:',minimal:false}))
         .pipe(postcss([
             uncss({
-                html: ['path.join(__dirname, "index.html")'],
+                html: ['prime-cucumber.cloudvent.net/index.html'],
                 htmlroot: '_site',
                 ignore: ['.green']
             }),
