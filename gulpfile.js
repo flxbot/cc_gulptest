@@ -11,7 +11,7 @@ gulp.task('css', function() {
     return gulp.src(path.join(__dirname, "css/main.css")
         .pipe(postcss([
             uncss({
-                html: 'path.join(__dirname, "index.html")',
+                html: ['path.join(__dirname, "index.html")'],
                 htmlroot: '_site',
                 ignore: ['.green']
             }),
